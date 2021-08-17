@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="52dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/instag_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up to see photos and videos"
+            android:textColor="#858585"
+            android:textSize="21sp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="from your friends."
+            android:textColor="#858585"
+            android:textSize="21sp"/>
+
+        <EditText
+            android:id="@+id/edEmailSigID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:layout_marginTop="22dp"
+            android:hint="Phone number, email or username"
+            android:background="@drawable/back_edit"/>
+
+        <EditText
+            android:id="@+id/edPassSigID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:background="@drawable/back_edit"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buSigID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3897f0"
+            app:cornerRadius="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_weight="1"
+                android:background="#e2e2e2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#9a9a9a"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_weight="1"
+                android:background="#e2e2e2"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up with Facebook"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#3897f0"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_logo_facebook"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:background="#e2e2e2"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@id/txtLogID"/>
+
+    <TextView
+        android:id="@+id/txtLogID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
